@@ -1,0 +1,6 @@
+<div class="container current-training" fxLayout="column" fxLayoutAlign="center center">
+    <mat-spinner mode="determinate" [value]="progress"></mat-spinner>
+    <h1>{{progress}}%</h1>
+<p>Don't give up!</p>
+<button mat-flat-button color="warn" (click)="stopTimer()">Stop</button>
+</div>

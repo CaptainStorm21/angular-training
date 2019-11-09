@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+        <mat-sidenav #sidenav [opened]="openSidenav">
+                <app-sidenav-list></app-sidenav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <mat-toolbar color="primary">
+                <div>
+                    <button mat-flat-button color="primary" (click)="sidenav.toggle()">
+                            <mat-icon mat-flat-button color="accent">menu</mat-icon>
+                    </button>
+                    <app-header></app-header>
+                </div>
+                <div><a routerLink="/"><h1>100-FIT</h1></a>
+                </div>
+            </mat-toolbar>
+            <main>
+                    
+                <router-outlet></router-outlet>
+            </main>
+        </mat-sidenav-content>
+</mat-sidenav-container>
+

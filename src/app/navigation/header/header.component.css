@@ -1,0 +1,13 @@
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a:hover,
+a:active{
+    color: turquoise;
+}
